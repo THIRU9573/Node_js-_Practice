@@ -1,0 +1,2 @@
+Monitor Performance: Continuously monitor the performance of your application during development to catch any memory-related issues early on. Use tools like Chrome DevTools, Node.js performance hooks, or third-party monitoring services to track memory usage and performance metrics.
+

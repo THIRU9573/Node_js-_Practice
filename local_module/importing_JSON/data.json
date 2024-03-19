@@ -1,0 +1,11 @@
+{
+    "name": "thirupathi",
+    "address":{
+        "street": "SC COLONY",
+        "Village":"Rampoor",
+        "Mandal":"Huzurabad",
+        "District": "Karimnagr",
+        "State":"Telanagana",
+        "PINCODE":505490
+    }
+}
