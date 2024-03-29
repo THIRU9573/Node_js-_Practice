@@ -1,0 +1,2 @@
+In Node.js, an I/O queue manages input and output operations, organizing them for efficient processing 
+by the event loop.

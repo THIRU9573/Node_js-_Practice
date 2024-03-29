@@ -1,11 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Node practice</title>
-</head>
-<body>
-    <h1>Hello {{name}} welcome to Techmind </h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/d80058540b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <div class="container">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="https://res.cloudinary.com/dr7atwqmv/image/upload/v1696094041/Brown_Simple_Icon_Food_Logo_1_wpglf4.png" class="food-masti-logo"/>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                      <a class="nav-link active" id="navItem1" aria-current="page" href="#wcuSection">Why Choose Us?</a>
+                      <a class="nav-link" id="navItem2" href="#menuSection">Explore Menu</a>
+                      <a class="nav-link" id="navItem3" href="#dpSection">Delivery & Payment</a>
+                      <a class="nav-link" id="navItem4" href="#followSection">Follow Us</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </nav>
+        <div class="banner-section-bg-container d-flex flex-column justify-content-center">
+            <div class="text-center">
+              <h1 class="banner-heading mb-3">Get Delicious Food Anytime</h1>
+              <p class="banner-caption mb-4">Eat Smart & healthy</p>
+              <button class="custom-button" onclick="location.href='#menuSection'">View Menu</button>
+              <button class="custom-outline-button" onclick="location.href='#menuSection'">Order Now</button>
+            </div>
+        </div>
+        <div class="wcu-section pt-5 pb-5" id="wcuSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="wcu-heading">Why Choose Us</h1>
+                        <p class="wcu-description">
+                            We make both the first and traditional versions of popular foods.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4 mb-3">
+                        <div class="wcu-card p-3">
+                            <img src="https://img.freepik.com/premium-vector/food-serving-tray-isolated-icon-white-background-silver-tray-hand-waiter-vector-illustration-flat-style_153097-2107.jpg?size=626&ext=jpg&uid=R105847189&ga=GA1.2.368126606.1686044370&semt=ais" class="wcu-card-image">
+                            <h1 class="wcu-card-title mt-3">Food Services</h1>
+                            <p class="wcu-card-description">
+                                Food services play an important role in our society. They provide us with a variety of food options 
+                                to choose from, and they help us to socialize and connect with others.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-3">
+                        <div class="wcu-card p-3">
+                            <img src="https://img.freepik.com/free-vector/hand-drawn-poke-illustration_23-2149255876.jpg?size=626&ext=jpg&uid=R105847189&ga=GA1.2.368126606.1686044370&semt=ais" class="wcu-card-image">
+                            <h1 class="wcu-card-title mt-3">Fresh Food</h1>
+                            <p class="wcu-card-description">
+                                Fresh food is an important part of a healthy diet. It provides us with essential vitamins, 
+                                minerals, and antioxidants. It also helps us to maintain a healthy weight.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-3">
+                        <div class="wcu-card p-3">
+                            <img src="https://img.freepik.com/free-vector/illustration-circle-stamp-banner_53876-28460.jpg?size=626&ext=jpg&uid=R105847189&ga=GA1.2.368126606.1686044370&semt=ais" class="wcu-card-image">
+                            <h1 class="wcu-card-title mt-3">Best Offer</h1>
+                            <p class="wcu-card-description">
+                                Best offers can be a great way to save money on the products and services you need. 
+                                Be sure to check back often to see what new best offers are available <span class="offer">50% OFF</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="explore-menu-section pt-5 pb-5" id="menuSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="explore-menu-heading">Explore Menu</h1>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/side-view-baked-chicken-with-cucumber-lemon-seasoning-bread-table_141793-4757.jpg?size=626&ext=jpg&uid=R105847189&ga=GA1.2.368126606.1686044370&semt=ais" class="menu-item-image w-100">
+                            <h1 class="menu-card-title">Non Veg Starter</h1>
+                            <a href="" class="menu-item-link">
+                                View All
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/fried-vegetables-with-sauce-pan_1220-5230.jpg?size=626&ext=jpg&uid=R105847189&ga=GA1.2.368126606.1686044370&semt=ais" class="menu-item-image w-100">
+                            <h1 class="menu-card-title">Veg Starter</h1>
+                            <a href="" class="menu-item-link">
+                                View All
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://img.freepik.com/free-photo/red-lentil-soup-with-slice-lemon-breadcrumbs_140725-1001.jpg?size=626&ext=jpg&uid=R105847189&ga=GA1.2.368126606.1686044370&semt=sph" class="menu-item-image w-100">
+                            <h1 class="menu-card-title">Soup</h1>
+                            <a href="" class="menu-item-link">
+                                View All
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://img.freepik.com/premium-photo/seafood-fish-charcoal-background_875722-20288.jpg?size=626&ext=jpg&uid=R105847189&ga=GA1.2.368126606.1686044370&semt=ais" class="menu-item-image w-100">
+                            <h1 class="menu-card-title">Fish & Sea Food</h1>
+                            <a href="" class="menu-item-link">
+                                View All
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://img.freepik.com/premium-photo/indian-vegetable-pulav-biryani-made-using-basmati-rice-served-terracotta-bowl-selective-focus_466689-55615.jpg?size=626&ext=jpg&uid=R105847189&ga=GA1.2.368126606.1686044370&semt=sph" class="menu-item-image w-100">
+                            <h1 class="menu-card-title">Main Course</h1>
+                            <a href="" class="menu-item-link">
+                                View All
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://img.freepik.com/premium-photo/photorealistic-product-shot-food-photography-nood_670382-80869.jpg?size=626&ext=jpg&uid=R105847189&ga=GA1.2.368126606.1686044370&semt=sph" class="menu-item-image w-100">
+                            <h1 class="menu-card-title">Noodles</h1>
+                            <a href="" class="menu-item-link">
+                                View All
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://img.freepik.com/premium-photo/dietary-salad-with-tomatoes-feta-lettuce-spinach-pine-nuts-top-view-flat-lay_2829-4864.jpg?size=626&ext=jpg&uid=R105847189&ga=GA1.2.368126606.1686044370&semt=ais" class="menu-item-image w-100">
+                            <h1 class="menu-card-title">Salads</h1>
+                            <a href="" class="menu-item-link">
+                                View All
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://img.freepik.com/premium-photo/chocolate-cake-served-with-chocolate-sauce_1220-4571.jpg?size=626&ext=jpg&uid=R105847189&ga=GA1.2.368126606.1686044370&semt=sph" class="menu-item-image w-100">
+                            <h1 class="menu-card-title">Dasserts</h1>
+                            <a href="" class="menu-item-link">
+                                View All
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="healthy-food-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <div class="text-center">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/healthy-food-plate-img.png" class="image-section"/>
+                        </div>
+                    </div>
+                    <div class=" col-12 col-md-7">
+                    
+                        <h1 class="heading">Fresh, Healthy, Organic, Delicious Fruits</h1>
+                        <p class="description">
+                            Fresh, healthy, organic, delicious fruits are a treasure trove of nutrients and antioxidants that can help us stay 
+                            healthy and well. Organic fruits are grown without the use of synthetic pesticides, herbicides, or fertilizers, 
+                            so they are cleaner and safer to eat. They also tend to be more flavorful and have a higher nutritional content 
+                            than conventionally grown fruits.
+                        </p>
+                        <button class="custom-button">Watch Video</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="delivery-and-payment-section pt-5 pb-5" id="dpSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 order-1 order-md-2">
+                        <div class="text-center">
+                            <img src="https://img.freepik.com/free-vector/happy-diwali-discount-sale-illustration-template_1017-21578.jpg?size=626&ext=jpg&uid=R105847189&ga=GA1.1.368126606.1686044370&semt=ais" class="image-section"/>
+                        </div>
+                    </div>
+                    <div class=" col-12 col-md-7 order-2 order-md-1">
+                        <h1 class="heading">Delivery and Payment</h1>
+                        <p class="description">
+                            Delivering fresh, healthy, organic, delicious fruits to your door is our passion. We offer convenient and affordable 
+                            delivery options, so you can enjoy the fruits of our labor without leaving your home.Choose from standard, express, 
+                            or overnight delivery, and pay with your preferred method, including credit card, debit card, and PayPal.
+                        </p>
+                        <button class="custom-button mb-3">Order Now</button>
+                        <div>
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" class="payment-image-card">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png" class="payment-image-card">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png" class="payment-image-card">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png" class="payment-image-card">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thanking-customer-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                        <h1 class="heading">Thank you for being a valuable customer to us.</h1>
+                        <p class="description">We have a suprise gift for you</p>
+                        <div>
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customer-img thanking-customer-section-gradient d-md-none">
+                        </div>
+                        <div>
+                            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="custom-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Redeem Gift
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog mt-5">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5 thanking-section-modal-style" id="exampleModalLabel">Gift Vouchar</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/gift-voucher-img.png" class="w-100">
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customer-img d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="fallow-us-section pt-5 pb-5" id="followSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="follow-us-heading text-center">Follow Us </h1>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="follow-us-icon-section">
+                                <i class="fa-brands fa-x-twitter icon"></i>
+                            </div>
+                            <div class="follow-us-icon-section">
+                                <i class="fa-brands fa-instagram icon"></i>
+                            </div>
+                            <div class="follow-us-icon-section">
+                                <i class="fa-brands fa-linkedin icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="https://res.cloudinary.com/dr7atwqmv/image/upload/v1696094041/Brown_Simple_Icon_Food_Logo_1_wpglf4.png" class="food-masti-logo"/>
+                        <h1 class="footer-section-mail-id">orderfood@foodmasti.com</h1>
+                        <p class="footer-section-address">6-65 Huzurabad,Karimnagar,Telangana</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

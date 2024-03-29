@@ -5,7 +5,9 @@ const fs = require("node:fs");
 const server = http.createServer((req, res) => {
     const name = "Rahul";
     res.writeHead(200, {"Content-Type":"text/html"})
-    let html = fs.readFileSync("./index.html", "utf-8")
+    let html = fs.readFileSync("./index1.html", "utf-8")
+    // const html = fs.readFileSync("./index.html", "utf-8")
+    // res.end(html)
     html = html.replace("{{name}}", name)
     res.end(html)
 });

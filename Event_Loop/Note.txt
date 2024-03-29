@@ -1,0 +1,29 @@
+Event Loop Execution Order:
+
+In Node.js, the event loop is a critical component responsible for handling asynchronous operations. Here's a step-by-step explanation of how the event loop executes:
+
+1. **Handle Timer Phases**: The event loop starts by checking for timers that are set to expire. If any timers have
+ reached their expiry time, their callback functions are added to the execution queue.
+
+2. **Handle I/O Operations**: Next, the event loop processes I/O-related tasks, such as reading from or writing to 
+files, making network requests, or interacting with databases. If any asynchronous I/O operations have completed, 
+their callback functions are added to the execution queue.
+
+3. **Handle Immediate Phases**: After handling timers and I/O operations, the event loop checks for immediate 
+callback functions that were scheduled to execute using `setImmediate()`. These callbacks are executed one by one.
+
+4. **Handle Close Events**: The event loop processes any close events, 
+such as `socket.on('close')` or `stream.on('close')`. Callbacks associated with these events are executed if present.
+
+5. **Handle Timer Repeats**: After completing the current iteration of the event loop, it checks for any 
+repeating timers (e.g., `setInterval()`). If any repeating timers are due to execute, their callback functions 
+are added to the execution queue.
+
+6. **Return to Wait State**: If there are no more tasks to execute, the event loop enters a wait state, 
+continuously monitoring for new events or tasks to handle.
+
+It's important to note that while the event loop follows this general sequence, the actual order of 
+execution can vary based on factors such as the timing of asynchronous operations, the complexity of the tasks, 
+and the nature of the callbacks. Additionally, Node.js allows for customization and fine-tuning of the event loop 
+behavior through modules like `process.nextTick()`, which allows certain functions to be executed before 
+the event loop moves on to the next phase.
